@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../style/add-prof.css">
+        <script src="https://kit.fontawesome.com/8752be39ad.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </head>
+<body>
+    <div class="profile-creation">
+        <h2>Create a New Profile</h2>
+        <div class="profile-picture-selector">
+          <label for="profile-pic">Profile Picture:</label>
+          <input type="file" id="profile-pic">
+        </div>
+        <div class="profile-name">
+          <label for="profile-name">Profile Name:</label>
+          <input type="text" id="profile-name" placeholder="Enter profile name">
+        </div>
+        <div class="icon-selection">
+          <label>Select an Icon:</label>
+          <div class="icon-grid">
+            <img src="default-icon1.jpg" alt="Icon 1">
+            <img src="default-icon2.jpg" alt="Icon 2">
+            <!-- More icons -->
+          </div>
+        </div>
+        <div class="settings">
+          <input type="checkbox" id="kids-profile"> Make this a kids' profile
+        </div>
+        <div class="actions">
+          <button type="submit">Save</button>
+          <button type="button" onclick="window.location.href='profile-settings.html'">Cancel</button>
+        </div>
+      </div>      
+    </body>
+    </html>
+    
+    <script src="../script/add-prof.js"></script>
+</body>
+</html>
