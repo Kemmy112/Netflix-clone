@@ -3,14 +3,16 @@
     margin: 0;
     padding: 0;
 }
-/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #141414;
     color: white;
 }
-
-.profile-creation {
+.profile-crea{
+    width: 100%;
+    margin: auto;
+}
+.profile-crea .profile-creation {
     width: 60%;
     margin: 50px auto;
     background-color: #222;
@@ -18,107 +20,139 @@ body {
     padding: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     text-align: center;
+    position: relative;
 }
-
-h2 {
+.profile-crea .profile-creation .prof-content{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+.profile-creation .nav{
+    width: 95%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+.profile-creation .nav i{
+   display: flex;
+   justify-content: right;
+   font-size: 28px;
+}
+.profile-creation h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
-/* Profile Picture Section */
-.profile-picture-selector {
-    margin-bottom: 30px;
-}
-
-#profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #444;
-    margin-top: 10px;
-    border: none;
-    color: transparent;
-    cursor: pointer;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-/* Profile Name Section */
-.profile-name {
+.profile-creation p{
     margin-bottom: 20px;
 }
-
-#profile-name {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
+.profile-creation .account-input{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.profile-creation .account-input img{
+    width: 90px;
+    border-radius: 5px;
+}
+.profile-creation .account-input input{
+    width: 80%;
+    padding: 18px;
+    background-color: #222;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 1rem;
-    margin-top: 10px;
-    text-align: center;
+    border-radius: 5px;
+    border: 2px solid ;
 }
-
-/* Icon Selection */
-.icon-selection {
-    margin-bottom: 30px;
+.kid-profile{
+    width: 90%;
+    margin: auto;
 }
-
-.icon-selection label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+.kid-profile .btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
+.kid-profile .btn .ic{
+    width: 80px;
+    border-radius: 100px;
+    border: 2px solid #f0e8e8;
+    cursor: pointer;
+    background-color: #8a8888;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
 
-.icon-grid {
+}
+.kid-profile .btn .ic .fa-minus{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.icon-grid img {
-    width: 60px;
-    height: 60px;
+    align-items: center;
+    background-color: #222;
+    border: 1px solid #8a8888;
     border-radius: 50%;
-    cursor: pointer;
+    margin-left: 2px;
 }
-
-/* Settings Section */
-.settings {
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-/* Buttons */
-.actions {
+.kid-profile .btn .ic .fa-check{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border: 1px solid #8a8888;
+    border-radius: 50%;
+    margin-left: 2px;
+    /* display: none; */
+}
+.kid-profile p{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    margin-bottom: 40px;
+}
+ .actions {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 button {
+    width: 100%;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: #e50914;
-    color: white;
+    background-color: #f3ebeb;
+    color: #141414;
     border: none;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
-
-button:hover {
-    background-color: #f40612;
+.actions .bt{
+    margin-top: 10px;
+    color: #f0e8e8;
+}
+.actions .bt:hover{
+    color: #f0e8e8;
+}
+.actions button:hover {
+    background-color: #edebeb;
+    opacity: .5;
 }
 
-button[type="button"] {
+.actions button[type="button"] {
     background-color: #222;
 }
 
