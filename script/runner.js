@@ -176,12 +176,12 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/src/login/log.html";
+  window.location.href = "/Netflix-clone/pages/log.html";
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/src/footer-contact us/contact.html";
+  window.location.href = "/Netflix-clone/pages/contact.html";
 });
 
