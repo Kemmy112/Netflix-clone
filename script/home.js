@@ -85,36 +85,34 @@ favoriteText2.addEventListener("click", function() {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const carousels = document.querySelectorAll('.carousel');
-    
-    carousels.forEach(carousel => {
-        const track = carousel.querySelector('.carousel-track');
-        const nextBtn = carousel.querySelector('.carousel-button.next');
-        const prevBtn = carousel.querySelector('.carousel-button.prev');
-        const items = Array.from(track.querySelectorAll('.one-one'));
-        
-        const itemsToShow = 5;
-        let currentIndex = 0;
 
-        function updateCarousel() {
-            const itemWidth = items[0].offsetWidth;
-            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const nextButton = carousel.querySelector('.next');
+    const prevButton = carousel.querySelector('.prev');
+    const slides = Array.from(track.children);
+    const slideWidth = slides[0].offsetWidth; // Get the width of a single slide
+    let currentIndex = 0;
+
+    // Function to update the position of the carousel
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    // Next button functionality
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            updateCarousel();
         }
+    });
 
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < items.length - itemsToShow) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
+    // Previous button functionality
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
     });
 });
 
@@ -136,4 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0

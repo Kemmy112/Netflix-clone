@@ -29,7 +29,11 @@ body {
     overflow-y: scroll;
 }
 .profile-creation .nav{
+<<<<<<< HEAD
     width: 90%;
+=======
+    width: 95%;
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
     padding: 10px;
     position: absolute;
     top: 0;
@@ -37,7 +41,11 @@ body {
 .profile-creation .nav i{
    display: flex;
    justify-content: right;
+<<<<<<< HEAD
    font-size: 23px;
+=======
+   font-size: 28px;
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
 }
 .profile-creation h2 {
     font-size: 2rem;
@@ -80,15 +88,24 @@ body {
     padding: 5px;
 }
 .kid-profile .btn .ic{
+<<<<<<< HEAD
     width: 85px;
+=======
+    width: 80px;
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
     border-radius: 100px;
     border: 2px solid #f0e8e8;
     cursor: pointer;
     background-color: #8a8888;
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     overflow: hidden;
     transition: background-color 0.3s ease-in-out;
+=======
+    transition: background-color 0.3s ease-in-out;
+
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
 }
 .kid-profile .btn .ic .fa-minus{
     width: 30px;
@@ -101,7 +118,10 @@ body {
     border: 1px solid #8a8888;
     border-radius: 50%;
     margin-left: 2px;
+<<<<<<< HEAD
     opacity: 1;
+=======
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
 }
 .kid-profile .btn .ic .fa-check{
     width: 30px;
@@ -114,6 +134,10 @@ body {
     border: 1px solid #8a8888;
     border-radius: 50%;
     margin-left: 2px;
+<<<<<<< HEAD
+=======
+    /* display: none; */
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
 }
 .kid-profile p{
     display: flex;
@@ -121,13 +145,21 @@ body {
     margin-bottom: 5px;
     margin-bottom: 40px;
 }
+<<<<<<< HEAD
 .actions {
+=======
+ .actions {
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
     width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0
 button {
     width: 100%;
     padding: 10px 20px;
@@ -138,6 +170,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+<<<<<<< HEAD
     margin-top: 10px;
 }
 .actions a {
@@ -168,3 +201,25 @@ button {
 .actions a{
     color: #ffff; 
 } 
+=======
+}
+.actions .bt{
+    margin-top: 10px;
+    color: #f0e8e8;
+}
+.actions .bt:hover{
+    color: #f0e8e8;
+}
+.actions button:hover {
+    background-color: #edebeb;
+    opacity: .5;
+}
+
+.actions button[type="button"] {
+    background-color: #222;
+}
+
+button[type="button"]:hover {
+    background-color: #444;
+}
+>>>>>>> 1abe13f7afc53696cb8b39f77d165cdbb609e2b0

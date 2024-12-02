@@ -38,11 +38,18 @@ nav .nav-logo{
   }
   nav ul li {
     list-style: none;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li {
+    display: flex;
   }
   nav ul li a {
     text-decoration: none;
     list-style-type: none;
     font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     color: white;
   }
@@ -211,6 +218,7 @@ nav .profile{
 }
 .page-one .top-ten-ic{
     width: 90%;
+    /* width: 20%; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -315,6 +323,7 @@ nav .profile{
 
 
 /* page two */
+
 .p-c{
     padding: 50px 0;
     background-color: #030404;
@@ -336,6 +345,7 @@ nav .profile{
 .carousel{
     width: 100%;
     margin-bottom: 50px;
+    /* outline: 2px solid red; */
 }
 .carousel-container {
     width: 85%;
@@ -400,6 +410,7 @@ nav .profile{
 }
 .one-one .icons .left-i{
     width: 55%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -563,6 +574,26 @@ nav .profile .dr{
 }
 .page .paging{
     width: 95%;
+    display: none;
+}
+.page-one .txt{
+    display: none;
+}
+.page-one .bg-video{
+    display: none;
+}
+.one-one:hover .pop{
+    opacity: 0;
+}
+
+/* PAGE TWO */
+.paging .arr-right{
+    display: none;
+}
+
+/* page two */
+.p-c{
+    padding: 10px 0;
 }
 .carousel{
     overflow-y: hidden;
@@ -584,9 +615,12 @@ footer .foot .text{
     grid-template-columns: 2fr 2fr ;
 }
 
+footer .foot .text{
+    grid-template-columns: 1fr;
+}
 
 
-
+    
 }
 
 

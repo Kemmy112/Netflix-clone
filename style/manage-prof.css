@@ -80,6 +80,7 @@ h1{
     align-items: center;
     background-size: cover;
     /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 .profile-tile, .fou .bg{
     width: 75px;
