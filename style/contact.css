@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+  background-color: #ffffff;
+  /* overflow: hidden; */
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+body .mainer{
+    background-color: #000000;
+    width: 100%;
+    height: 70px;
+    
+}
+
+.mainer .spade{
+    display:flex;
+    justify-content: space-between;
+    /* outline: 2px solid blue; */
+    width: 55%;
+    margin-left: 20%;
+}
+
+.mainer .left-flex{
+    display: flex;
+    width: 240px;
+    /* outline: 1px solid red; */
+    color: #ffffff;
+    margin-top: 13px;
+}
+
+.mainer .left-flex .icon img{
+    width: 100px;
+    filter: contrast(1.2);
+}
+
+.mainer .left-flex .help{
+    border-left: 1px solid #ffffff;
+    height: 24px;
+    margin-top: 10px;
+    /* padding: 7px; */
+}
+
+.mainer .left-flex .help p{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.mainer .right-flex{
+    margin-top: 13px;
+}
+
+.mainer .right-flex .join{
+    padding: 9px 17px;
+    border:1px solid white;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: 600;
+}
+
+.mainer .right-flex .sg-up{
+    padding: 9px 15px;
+    border: none;
+    background-color: #e50914;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.meta-header{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #cecece;
+    height: 160px;
+    overflow: hidden;
+    /* padding: 40px 45px; */
+}
+
+.meta-header .floater{
+    /* outline: 1px solid red; */
+    width: 60%;
+    height: 110px;
+    margin-left: 18%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.meta-header .floater .warn{
+    margin-top: 30px;
+    margin-left: 6px;
+}
+
+.meta-header .floater .mid{
+    margin-left: 22px;
+    margin-top: 15px;
+}
+
+.meta-header .floater .mid .top{
+    font-weight: 600;
+}
+
+.meta-header .floater .lastlink{
+    margin-top: 34px;
+    width: 120px;
+}
+
+.meta-header .floater .lastlink a{
+    font-weight: 600;
+    color:#e50914 ;
+    text-decoration: none;
+}
+
+.meta-header .floater .lastlink a:hover{
+    text-decoration: underline;
+}
+
+.to-contact{
+    width: 100%;
+}
+
+.to-contact .contact-info{
+    /* outline: 2px solid red; */
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+
+.to-contact .contact-info h1{
+    font-size: 38px;
+}
+
+.to-contact .contact-info .to-tell p{
+    margin-top: 3%;
+    font-weight: 600;
+}
+
+.to-contact .contact-info .to-tell #teller{
+    margin-top: 16px;
+    width: 680px;
+    height: 38px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    margin-left: -6px;
+}
+
+.to-contact .contact-info .to-tell .rrow{
+
+    position: absolute;
+    left: 69%;
+    top: 35.4%;
+}
+
+.to-contact .contact-info .to-tell img{
+    width: 20px;
+    /* margin-top: 4%; */
+}
+
+
+.to-contact .contact-info .lower-lnk{
+    margin-top: 16%;
+}
+
+.to-contact .contact-info .lower-lnk .one, .two, .three, .four, .five, .six{
+    margin-top: 2%;
+    border-bottom: 1px solid #cecece;
+}
+
+.to-contact .contact-info .lower-lnk a{
+    margin-left: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.to-contact .contact-info .lower-lnk span img{
+    width: 20px;
+}
+
+
+footer{
+    margin-top: 5%;
+    background-image: linear-gradient( -365deg, #000000, #e50914);
+    height: 250px;
+    overflow: hidden;
+}
+
+footer .fotr-txt{
+    margin-left: 18%;
+    margin-top: 4%;
+}
+
+footer .fotr-txt ul{
+    list-style-type: none;
+}
+
+footer .fotr-txt ul li{
+    padding: 10px;
+}
+
+footer .fotr-txt ul li a{
+    color: #ffffff;
+}
+
+/* Media query for responsive design */
+
+@media only screen and (min-width:350px) and (max-width:450px){
+
+    *{
+        margin: 0;
+        padding: 0;box-sizing: border-box;
+    }
+    
+    body{
+        width: 100%;
+      background-color: #ffffff;
+      /* overflow: hidden; */
+      font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+        sans-serif;
+    }
+    
+    body .mainer{
+        background-color: #000000;
+        width: 100%;
+        height: 70px;
+        
+    }
+    
+    .mainer .spade{
+        display:flex;
+        justify-content: space-between;
+        /* outline: 2px solid blue; */
+        width: 55%;
+        margin-left: 14%;
+    }
+    
+    .mainer .left-flex{
+        display: block;
+        width: 240px;
+        color: #ffffff;
+        margin-top: 13px;
+        margin-left: -45px;
+        /* outline: 2px solid blue; */
+    }
+    
+    .mainer .left-flex .icon img{
+        width: 70px;
+        filter: contrast(1.2);
+    }
+    
+    .mainer .left-flex .help{
+        /* border-left: 1px solid #ffffff; */
+        height: 24px;
+        margin-top: 2px;
+        display: none;
+        /* padding: 7px; */
+    }
+    
+    .mainer .left-flex .help p{
+        margin-left: 2px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    .mainer .right-flex{
+        margin-top: 13px;
+        margin-left: 30%;
+        display: flex;
+        /* outline: 2px solid red; */
+        height: 40px;
+    }
+    
+    .mainer .right-flex .join{
+        padding: 6px 9px;
+        border:1px solid white;
+        border-radius: 4px;
+        color: #ffffff;
+        background-color: #000000;
+        font-weight: 600;
+        width: 100px;
+    }
+    
+    .mainer .right-flex .sg-up{
+        padding: 6px 9px;
+        border: none;
+        background-color: #e50914;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 4px;
+        margin-left: 8px;
+        width: 90px;
+    }
+    
+
+    
+    .to-contact{
+        width: 90%;
+        /* outline: 2px solid red; */
+        margin-left: 5%;
+    }
+    
+    .to-contact .contact-info{
+        /* outline: 2px solid red; */
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    
+    
+    .to-contact .contact-info h1{
+        font-size: 36px;
+    }
+    
+    .to-contact .contact-info .to-tell p{
+        margin-top: 3%;
+        font-weight: 600;
+    }
+    
+    .to-contact .contact-info .to-tell #teller{
+        margin-top: 16px;
+        width: 300px;
+        height: 38px;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        margin-left: -6px;
+    }
+    
+    .to-contact .contact-info .to-tell .rrow{
+    
+        position: absolute;
+        left: 74%;
+        top: 27.4%;
+    }
+    
+    .to-contact .contact-info .to-tell img{
+        width: 20px;
+        /* margin-top: 4%; */
+    }
+    
+    
+    .to-contact .contact-info .lower-lnk{
+        margin-top: 16%;
+    }
+    
+    .to-contact .contact-info .lower-lnk .one, .two, .three, .four, .five, .six{
+        margin-top: 2%;
+        border-bottom: 1px solid #cecece;
+    }
+    
+    .to-contact .contact-info .lower-lnk a{
+        margin-left: 12px;
+        font-weight: 600;
+        color: #000000;
+    }
+    
+    .to-contact .contact-info .lower-lnk span img{
+        width: 20px;
+    }
+    
+    
+    footer{
+        margin-top: 5%;
+        background-image: linear-gradient( -365deg, #000000, #e50914);
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    footer .fotr-txt{
+        margin-left: 18%;
+        margin-top: 4%;
+    }
+    
+    footer .fotr-txt ul{
+        list-style-type: none;
+    }
+    
+    footer .fotr-txt ul li{
+        padding: 10px;
+    }
+    
+    footer .fotr-txt ul li a{
+        color: #ffffff;
+    }
+}
