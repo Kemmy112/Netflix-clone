@@ -24,7 +24,6 @@ nav{
     margin-bottom: 100px;
     /* outline: 2px solid red; */
 }
-
 nav .nav-logo{
     width: 80%;
 }
@@ -41,8 +40,6 @@ nav ul a{
    font-weight: 800;
     color: #0d0d0d;
 }
-
-
 /* Start your profile transfer  */
 .trans-con{
     width: 100%;
@@ -130,8 +127,6 @@ nav ul a{
     font-weight: 100;
     font-style: italic;
 }
-
-
 .footer-container{
     width: 100%;
     background-color: #F3F3F3;

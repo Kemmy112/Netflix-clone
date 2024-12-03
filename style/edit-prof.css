@@ -21,7 +21,6 @@ body {
     font-size: 50px;
     border-bottom: 1px solid #333;
 }
-
 /* edit profile form */
 .edit-profile-form {
     display: flex;
@@ -51,7 +50,6 @@ body {
 .left .profile-picture-section i{
     font-size: 20px;
 }
-
 /* Form group */
 .edit-profile-form .lf-rg .right{
     margin-left: 10px;
@@ -78,7 +76,6 @@ input, select {
     background-color: #333;
     color: #fff;
 }
-
 /* Autoplay Settings */
 .autoplay-options label {
     display: block;
@@ -88,7 +85,6 @@ input, select {
 .autoplay-options input {
     margin-right: 10px;
 }
-
 /*save buttons */
 .form-actions {
     width: 40%;

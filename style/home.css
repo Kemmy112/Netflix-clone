@@ -30,14 +30,6 @@ nav .nav-logo{
     width: 10%;
   }
   nav ul{
-    width: 60%;
-    display: flex;
-  }
-  nav ul .shows{
-    margin-left: 30px;
-  }
-  nav ul li {
-    list-style: none;
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -48,7 +40,6 @@ nav .nav-logo{
   nav ul li a {
     text-decoration: none;
     list-style-type: none;
-    font-size: 16px;
     font-size: 18px;
     font-weight: 900;
     color: white;
@@ -361,15 +352,11 @@ nav .profile{
 .carousel-track .one-one {
     position: relative;
     min-width: calc(100% / 5); 
-    position: relative;
-    flex: 0 0 calc(100% / 5);
 }
 .one-one:hover .pop{
     top: 0;
     opacity: 1;
     left: 0;
-    opacity: 1;
-    transform: translateY(0)
 }
 .one-one img{
     width: 95%;
@@ -397,8 +384,6 @@ nav .profile{
     margin-bottom: 10px
 }
 .one-one .pop .icons{
-    width: 95%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -409,7 +394,6 @@ nav .profile{
     color: #000;
 }
 .one-one .icons .left-i{
-    width: 55%;
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -454,10 +438,6 @@ nav .profile{
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-    display: none;
-}
-.carousel-button{
-    display: initial;
 }
 .prev {
     left: -8%;
@@ -538,42 +518,10 @@ footer .foot p{
 nav{
     padding-top: 0;
 }
-nav .nav-logo{
-    width: 20%;
-}
-nav .nav-logo img{
-    width: 100%;
-}
 nav ul{
     display: none;
 }
 nav .profile{
-    width: 20%;
-}
-nav .profile .dr{
-    display: none;
-}
-
-/* page one */
-    .page-one .top-ten-ic{
-        width: 100%;
-    }
-    .page-one .lf-rg{
-        display: none;
-    }
-    .page-one .lf-rg .lf{
-        width: 70%;
-    }
-    .page-one .txt h2{
-        font-size: 25px;
-    }
-
-/* PAGE TWO */
-.p-c{
-    padding: 5px 0;
-}
-.page .paging{
-    width: 95%;
     display: none;
 }
 .page-one .txt{
@@ -598,23 +546,13 @@ nav .profile .dr{
 .carousel{
     overflow-y: hidden;
 }
-.carousel-button{
-    display: none;
-}
-
-
 .carousel-track .one-one {
     min-width: calc(100% / 2); 
 }
 /* Footer */
 .foot .icon{
-    width: 30%;
+    display: none;
 }
-footer .foot .text{
-    width: 100%;
-    grid-template-columns: 2fr 2fr ;
-}
-
 footer .foot .text{
     grid-template-columns: 1fr;
 }
@@ -622,5 +560,3 @@ footer .foot .text{
 
     
 }
-
-

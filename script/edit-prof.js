@@ -2,14 +2,12 @@
 const saveBtn = document.querySelector('.save-btn');
 const cancelBtn = document.querySelector('.cancel-btn');
 const deleteBtn = document.querySelector('.delete-btn');
-
 // Get references to the form and its inputs
 const profileForm = document.querySelector('.edit-profile-form');
 const profileNameInput = document.querySelector('#profile-name');
 const languageSelect = document.querySelector('#language');
 const gameHandleInput = document.querySelector('#game-handle');
 const maturitySettingSelect = document.querySelector('#maturity-setting');
-
 // Store initial values for cancellation
 const initialFormState = {
     profileName: profileNameInput.value,
@@ -17,10 +15,8 @@ const initialFormState = {
     gameHandle: gameHandleInput.value,
     maturitySetting: maturitySettingSelect.value,
 };
-
 // Define the manage-prof page URL
 const manageProfPageURL = './manage-prof.html'; // Adjust the path as needed
-
 // Save button handler
 saveBtn.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default form submission
@@ -35,7 +31,6 @@ saveBtn.addEventListener('click', (event) => {
     // Redirect to manage-prof page
     window.location.href = manageProfPageURL;
 });
-
 // Cancel button handler
 cancelBtn.addEventListener('click', () => {
     // Restore initial values
@@ -47,7 +42,6 @@ cancelBtn.addEventListener('click', () => {
     // Redirect to manage-prof page
     window.location.href = manageProfPageURL;
 });
-
 // Delete button handler
 deleteBtn.addEventListener('click', () => {
     console.log('Profile deleted.');

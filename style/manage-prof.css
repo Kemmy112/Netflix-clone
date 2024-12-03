@@ -29,7 +29,6 @@ h1{
     padding: 20px;
     margin-bottom: 100px;
 }
-
 /* Profile Tile */
 .add-profile-tile {
     display: flex;
@@ -80,7 +79,6 @@ h1{
     align-items: center;
     background-size: cover;
     /* outline: 2px solid red; */
-    outline: 2px solid red;
 }
 .profile-tile, .fou .bg{
     width: 75px;
@@ -106,7 +104,6 @@ h1{
 .profile-tile, .fou:hover{
     background-color: #FFFFFF;
 }
-
 .manage-profiles button{
     width: fit-content;
     margin: auto;
@@ -119,12 +116,8 @@ h1{
     color: #FFFFFF;
     border: none;
 }
-
-
-
 /* media query */
 @media screen and (max-width: 1000px){
-
     *{
         margin: 0;
         padding: 0;
@@ -134,10 +127,5 @@ h1{
        width: 100%;
         color: #FFFFFF;
     }
-
    
-
-
-
-
 }
