@@ -185,3 +185,78 @@ contactQuestions.addEventListener("click", () => {
   window.location.href = "/Netflix-clone/pages/contact.html";
 });
 
+// const getStarted = document.getElementById('strt')
+
+// const errorMessage = document.getElementById('error-msg');
+
+// const divDisplay = document.getElementById('innput')
+// console.log(divDisplay)
+
+
+// divDisplay.addEventListener('submit', function(event) {
+
+//   errorMessage.textContent = '';
+
+
+//   const email = document.getElementById('email').value.trim();
+
+
+//   if(!email){
+//     event.preventDefault()
+//     errorMessage.textContent = 'Input field cannot be empty.';
+//   }else{
+//     // event.preventDefault()
+//     window.location.href = '/Netflix-clone/src/home.html';
+//   }
+
+// })
+
+const getStarted = document.getElementById('strt');
+const errorMessage = document.getElementById('error-msg');
+const divDisplay = document.getElementById('innput'); // Ensure this is a form element.
+
+divDisplay.addEventListener('submit', function(event) {
+  errorMessage.textContent = '';
+
+  const email = document.getElementById('email').value.trim();
+
+  if (!email) {
+    event.preventDefault();
+    errorMessage.textContent = 'Input field cannot be empty.';
+
+    //For the timeout
+    setTimeout(() => {
+      errorMessage.textContent = '';
+    }, 1000);
+
+  } else {
+    // Remove event.preventDefault() here to allow the redirect
+    event.preventDefault()
+    window.location.href = '/Netflix-clone/src/home.html';
+  }
+});
+
+const getStart = document.getElementById('start');
+const errMessage = document.getElementById('erro-msg');
+const divDisp = document.getElementById('input-class'); // Ensure this is a form element.
+
+divDisp.addEventListener('submit', function(event) {
+  errMessage.textContent = '';
+
+  const email = document.getElementById('em-il').value.trim();
+
+  if (!email) {
+    event.preventDefault();
+    errMessage.textContent = 'Input field cannot be empty.';
+
+    //For the timeout
+    setTimeout(() => {
+      errMessage.textContent = '';
+    }, 1000);
+
+  } else {
+    // Remove event.preventDefault() here to allow the redirect
+    event.preventDefault()
+    window.location.href = '/Netflix-clone/src/home.html';
+  }
+});
