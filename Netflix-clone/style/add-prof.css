@@ -29,7 +29,7 @@ body {
     overflow-y: scroll;
 }
 .profile-creation .nav{
-    width: 95%;
+    width: 90%;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@ body {
 .profile-creation .nav i{
    display: flex;
    justify-content: right;
-   font-size: 28px;
+   font-size: 23px;
 }
 .profile-creation h2 {
     font-size: 2rem;
@@ -80,15 +80,15 @@ body {
     padding: 5px;
 }
 .kid-profile .btn .ic{
-    width: 80px;
+    width: 85px;
     border-radius: 100px;
     border: 2px solid #f0e8e8;
     cursor: pointer;
     background-color: #8a8888;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     transition: background-color 0.3s ease-in-out;
-
 }
 .kid-profile .btn .ic .fa-minus{
     width: 30px;
@@ -101,6 +101,7 @@ body {
     border: 1px solid #8a8888;
     border-radius: 50%;
     margin-left: 2px;
+    opacity: 1;
 }
 .kid-profile .btn .ic .fa-check{
     width: 30px;
@@ -113,7 +114,6 @@ body {
     border: 1px solid #8a8888;
     border-radius: 50%;
     margin-left: 2px;
-    /* display: none; */
 }
 .kid-profile p{
     display: flex;
@@ -121,14 +121,13 @@ body {
     margin-bottom: 5px;
     margin-bottom: 40px;
 }
- .actions {
+.actions {
     width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 button {
     width: 100%;
     padding: 10px 20px;
@@ -139,23 +138,33 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    margin-top: 10px;
+}
+.actions a {
+    text-decoration: none;
+    color: #141414;
+}
+.actions .bt1{
+    background-color: #edebeb;
+    color: #000;
+}
+.actions .bt1 a{
+    color: #0e0e0e;
+}
+.actions .bt1:hover {
+    background-color: #c0bebe;
+}
+.actions .bt1:hover a {
+    color: white;
 }
 .actions .bt{
-    margin-top: 10px;
-    color: #f0e8e8;
+    background-color: #0e0d0d;
+    color: #ffff;
 }
 .actions .bt:hover{
-    color: #f0e8e8;
+    color: #ffff;
+    background-color: #bab6b6;
 }
-.actions button:hover {
-    background-color: #edebeb;
-    opacity: .5;
-}
-
-.actions button[type="button"] {
-    background-color: #222;
-}
-
-button[type="button"]:hover {
-    background-color: #444;
-}
+.actions a{
+    color: #ffff; 
+} 

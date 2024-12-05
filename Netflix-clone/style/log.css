@@ -77,7 +77,7 @@ header .continer .icon-fix img {
 #pswd {
   width: 280px;
   height: 50px;
-  background: #0071eb;
+  background: #fff;
   opacity: 40%;
   border: 1px solid white;
   border-radius: 5px;
@@ -90,10 +90,12 @@ header .continer .icon-fix img {
 
 .firrst .sign-in-form-container .sign-in-form .infot #e-mail {
   margin-top: 25px;
+  padding: 10px;
 }
 
 .firrst .sign-in-form-container .sign-in-form .infot #pswd {
   margin-top: 19px;
+  padding: 10px;
 }
 
 .firrst .sign-in-form-container .sign-in-form .infot .sgn-btn {

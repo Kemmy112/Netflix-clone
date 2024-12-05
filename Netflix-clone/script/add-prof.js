@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const icContainer = document.querySelector(".kid-profile .btn .ic");
     const minusIcon = icContainer.querySelector(".fa-minus");
     const checkIcon = icContainer.querySelector(".fa-check");
-
     let isMinusActive = true;
-
     icContainer.addEventListener("click", () => {
         console.log("Toggling icons..."); // Debug
         if (isMinusActive) {

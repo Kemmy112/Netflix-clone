@@ -1,5 +1,6 @@
 
 
+
     function toggleDropdown() {
         const dropdownMenu = document.getElementById("dropdownMenu");
         dropdownMenu.style.display = dropdownMenu.style.display === "flex" ? "none" : "flex";
@@ -37,6 +38,7 @@
 
 
     
+
 // const showImage = document.querySelector('.show-image');
 // const textOverlay = document.querySelector('.text-overlay');
 
@@ -59,6 +61,7 @@
 //     await new Promise((resolve) => setTimeout(resolve, 9000)); // Delay before the next cycle
 //   }
 // }
+
 
 // Start the animation loop
 // startAnimationLoop();
@@ -128,6 +131,7 @@ function moveSlide(direction) {
         container.style.transform = `translateX(${offset}px)`; // Move the container
     });
 }
+
 
 let nowSlideIndex = 0; // Current slide index
 const slidesToShower = 5; // Number of slides to show at once
@@ -228,6 +232,7 @@ function moveSlided(direction) {
         container.style.transform = `translateX(${upsetter}px)`; // Move the container
     });
 }
+
 
 
 
