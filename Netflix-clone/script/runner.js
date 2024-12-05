@@ -176,7 +176,7 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "./Netflix-clone\pages\log.html";
+  window.location.href = "/Netflix-clone/pages/log.html";
 });
 
 const contactQuestions = document.getElementById("quest");
