@@ -172,6 +172,7 @@ mim.onclick = function () {
 
 }
 
+//Sign in section
 
 const signIn = document.getElementById("sign-btn");
 
@@ -185,31 +186,7 @@ contactQuestions.addEventListener("click", () => {
   window.location.href = "/Netflix-clone/pages/contact.html";
 });
 
-// const getStarted = document.getElementById('strt')
 
-// const errorMessage = document.getElementById('error-msg');
-
-// const divDisplay = document.getElementById('innput')
-// console.log(divDisplay)
-
-
-// divDisplay.addEventListener('submit', function(event) {
-
-//   errorMessage.textContent = '';
-
-
-//   const email = document.getElementById('email').value.trim();
-
-
-//   if(!email){
-//     event.preventDefault()
-//     errorMessage.textContent = 'Input field cannot be empty.';
-//   }else{
-//     // event.preventDefault()
-//     window.location.href = '/Netflix-clone/src/home.html';
-//   }
-
-// })
 
 const getStarted = document.getElementById('strt');
 const errorMessage = document.getElementById('error-msg');
