@@ -1,24 +1,4 @@
 
-// let currentIndex = 0;
-    
-//     function slide(direction) {
-//       const slider = document.getElementById('slider');
-//       const slides = document.querySelectorAll('.slide');
-//       const slideWidth = slides[0].offsetWidth + 15; // Slide width + margin
-
-//       // Update the current index
-//       currentIndex += direction;
-//       if (currentIndex < 0) {
-//         currentIndex = 0;
-//       } else if (currentIndex > slides.length - 3) { // Show 3 slides at a time
-//         currentIndex = slides.length - 3;
-//       }
-      
-//       // Apply translation
-//       slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-//     }
-
-
 
 
     function toggleDropdown() {
@@ -58,28 +38,30 @@
 
 
     
-const showImage = document.querySelector('.show-image');
-const textOverlay = document.querySelector('.text-overlay');
 
-function animateImage() {
-  return new Promise((resolve) => {
-    showImage.style.transform = 'scale(1.2)';
-    textOverlay.style.opacity = '1';
+// const showImage = document.querySelector('.show-image');
+// const textOverlay = document.querySelector('.text-overlay');
 
-    setTimeout(() => {
-      showImage.style.transform = 'scale(1)';
-      textOverlay.style.opacity = '0';
-      resolve();
-    }, 9000); 
-  });
-}
+// function animateImage() {
+//   return new Promise((resolve) => {
+//     showImage.style.transform = 'scale(1.2)';
+//     textOverlay.style.opacity = '1';
 
-async function startAnimationLoop() {
-  while (true) {
-    await animateImage();
-    await new Promise((resolve) => setTimeout(resolve, 9000)); // Delay before the next cycle
-  }
-}
+//     setTimeout(() => {
+//       showImage.style.transform = 'scale(1)';
+//       textOverlay.style.opacity = '0';
+//       resolve();
+//     }, 9000); 
+//   });
+// }
+
+// async function startAnimationLoop() {
+//   while (true) {
+//     await animateImage();
+//     await new Promise((resolve) => setTimeout(resolve, 9000)); // Delay before the next cycle
+//   }
+// }
+
 
 // Start the animation loop
 // startAnimationLoop();
@@ -150,24 +132,109 @@ function moveSlide(direction) {
     });
 }
 
-// Dropdown toggle function
-// function toggleDropdown() {
-//     const dropdownMenu = document.getElementById('dropdownMenu');
-//     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-// }
 
-// // Close dropdown when clicking outside
-// window.onclick = function(event) {
-//     if (!event.target.matches('.drop button')) {
-//         const dropdowns = document.getElementsByClassName("dropdown-cont");
-//         for (let i = 0; i < dropdowns.length; i++) {
-//             const openDropdown = dropdowns[i];
-//             if (openDropdown.style.display === 'block') {
-//                 openDropdown.style.display = 'none';
-//             }
-//         }
-//     }
-// }
+let nowSlideIndex = 0; // Current slide index
+const slidesToShower = 5; // Number of slides to show at once
+const sliderContainer = document.querySelectorAll('.slider-contain');
+
+function moveSlides(direction) {
+    sliderContainer.forEach(container => {
+        const totalSlide = container.children.length; // Total number of slides
+        const maxIndexer = totalSlide - slidesToShower; // Maximum index to prevent overflow
+
+        // Update current slide index based on direction
+        nowSlideIndex += direction;
+
+        // Ensure currentSlideIndex stays within bounds
+        if (nowSlideIndex < 0) {
+            nowSlideIndex = 0;
+        } else if (nowSlideIndex > maxIndexer) {
+            nowSlideIndex = maxIndexer;
+        }
+
+        // Move the slides
+        const offseter = -nowSlideIndex * (200 + 10); // 200 is the width of each slide + margin
+        container.style.transform = `translateX(${offseter}px)`; // Move the container
+    });
+}
+
+let presentSlideIndex = 0; // Current slide index
+const slidesToShowing = 5; // Number of slides to show at once
+const sliderCont = document.querySelectorAll('.slider-containing');
+
+function moveSlidex(direction) {
+    sliderCont.forEach(container => {
+        const totalSliders = container.children.length; // Total number of slides
+        const maxInder = totalSliders - slidesToShowing; // Maximum index to prevent overflow
+
+        // Update current slide index based on direction
+        presentSlideIndex += direction;
+
+        // Ensure currentSlideIndex stays within bounds
+        if (presentSlideIndex < 0) {
+            presentSlideIndex = 0;
+        } else if (presentSlideIndex > maxInder) {
+            presentSlideIndex = maxInder;
+        }
+
+        // Move the slides
+        const offseting = -presentSlideIndex * (200 + 10); // 200 is the width of each slide + margin
+        container.style.transform = `translateX(${offseting}px)`; // Move the container
+    });
+}
+
+let recentSlideIndex = 0; // Current slide index
+const slidesToShowfor = 5; // Number of slides to show at once
+const sliderConty = document.querySelectorAll('.slider-conting');
+
+function moveSlidey(direction) {
+    sliderConty.forEach(container => {
+        const totalSlidy = container.children.length; // Total number of slides
+        const maxIndxing = totalSlidy - slidesToShowfor; // Maximum index to prevent overflow
+
+        // Update current slide index based on direction
+        recentSlideIndex += direction;
+
+        // Ensure currentSlideIndex stays within bounds
+        if (recentSlideIndex < 0) {
+            recentSlideIndex = 0;
+        } else if (recentSlideIndex > maxIndxing) {
+            recentSlideIndex = maxIndxing;
+        }
+
+        // Move the slides
+        const upseting = -recentSlideIndex * (200 + 10); // 200 is the width of each slide + margin
+        container.style.transform = `translateX(${upseting}px)`; // Move the container
+    });
+}
+
+let latestSlideIndex = 0; // Current slide index
+const slidesToShowoff = 5; // Number of slides to show at once
+const sliderContyey = document.querySelectorAll('.slider-containerer');
+
+function moveSlided(direction) {
+    sliderContyey.forEach(container => {
+        const totalSlidyey = container.children.length; // Total number of slides
+        const maxIndxering = totalSlidyey - slidesToShowoff; // Maximum index to prevent overflow
+
+        // Update current slide index based on direction
+        latestSlideIndex += direction;
+
+        // Ensure currentSlideIndex stays within bounds
+        if (latestSlideIndex < 0) {
+            latestSlideIndex = 0;
+        } else if (latestSlideIndex > maxIndxering) {
+            latestSlideIndex = maxIndxering;
+        }
+
+        // Move the slides
+        const upsetter = -latestSlideIndex * (200 + 10); // 200 is the width of each slide + margin
+        container.style.transform = `translateX(${upsetter}px)`; // Move the container
+    });
+}
+
+
+
 
 
 

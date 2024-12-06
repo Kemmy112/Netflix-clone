@@ -152,10 +152,10 @@ footer .fut{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.footer .fut .txt{
+/* .footer .fut .txt{
     /* margin-bottom: 30px; */
  
-}
+
 footer .fut a{
   text-decoration: none;
   color: #bfbcbc;

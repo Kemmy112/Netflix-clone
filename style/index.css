@@ -19,16 +19,22 @@ body{
 .nav-left{
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  padding: 30px;
+  gap: 1.5rem;
+  padding: 10px;
 }
 .nav-left img{
   width: 100px;
+  margin-top: 10%;
 }
-.nav-left h2{
-  font-size: 20px;
+.nav-text{
+  display: flex;
+  gap: 2rem;
+  margin-top: 6%;
+}
+.nav-text a{
+  text-decoration: none;
+  font-size: 15px;
   color: #fff;
-  margin-top: 8%;
 }
 .nav-right{
   width: fit-content;
@@ -36,7 +42,7 @@ body{
   margin-left: 40%;
 
 }
-.icon{
+.icony{
   display: flex;
   flex-direction: row;
   gap: 5rem;
@@ -72,6 +78,9 @@ body{
 .bell:hover .bellflex{
   display: block;
 }
+.bellflex a:hover{
+  text-decoration: underline;
+}
 
 .bellflex a{
   color: white;
@@ -103,6 +112,7 @@ body{
   position: absolute;
   background-color: #000;
   z-index: 4;
+  right: 2%;
   padding: 10px;
 }
 .arrowmenu a{
@@ -114,12 +124,18 @@ body{
 .arrow:hover .arrowmenu{
   display: block;
 }
+.arrowmenu a:hover{
+  text-decoration: underline;
+}
 
 .arrowmenu .firsty{
   display: flex;
   gap: 2rem;
   margin-top: 2%;
   /* outline: 2px solid red; */
+}
+.arrowmenu .firsty:hover{
+  margin-top: 2%;
 }
 .arrowmenu .secondy{
   display: flex;
@@ -146,13 +162,13 @@ body{
   background-color: #000;
   color: #fff;
 }
-/* 
+ 
 .viddy{
-  height: 720px;
-} */
+  height: 650px;
+} 
 
  .vid{
-  width: 1400px;
+  width: 1500px;
   height: 600px;
 }
 .vid video{
@@ -175,17 +191,17 @@ body{
 .nav2 {
   position: absolute;
   width: 100%;
-  margin-top: -58%;
+  margin-top: -55%;
   height: 100%;
   /* border: 2px solid black; */
   /* background-color: #000000; */
   }
   
   .nav2 h2 {
-  font-size: 50px;
+  font-size: 40px;
   position: relative;
-  left: 15%;
-  top: 10%;
+  left: 5%;
+  top: 8%;
   color: #ffffff;
   /* border: 2px solid black; */
   width: fit-content;
@@ -193,15 +209,15 @@ body{
   }
 .drop{
 position: absolute;
-margin-left: 45%;
-margin-top: 0%;
+margin-left: 28%;
+margin-top: 1.5%;
 }
 .drop button{
 padding: 5px;
-border-radius: 5px;
 font-size: 16px;
 background-color: #000;
 color: #fff;
+border: 1px solid #fff;
 } 
 /* #dropdownMenu{
 display: flex;
@@ -210,9 +226,10 @@ flex-wrap: nowrap;
 } */
 
 .dropdown-cont {
-/* display: flex; Hide menu initially  */
+ display: none; 
+ padding: 7px;
  /* flex-direction: row; */
-gap: 2rem;
+gap: 1rem;
 position: relative;
 top: 10%;
 background-color: #000;
@@ -225,6 +242,7 @@ width: fit-content;
 .dropdown-cont li {
 color: #ffffff;
 padding: 2px 2px;
+font-size: 13px;
 text-decoration: none;
 display: block;
 }
@@ -234,12 +252,12 @@ text-decoration: underline;
 }
 
 
-/* .line-text{
+ .line-text{
   outline: 2px solid red;
   width: 38%;
-} */
+} 
 
-/* .line-text h2{
+.line-text h2{
   width: 38%;
   color: #fff;
   font-size: 14px;
@@ -248,9 +266,9 @@ text-decoration: underline;
   top: 85%;
 }
 
-.butt-row{ */
+.butt-row{ 
   /* outline: 2px solid blue; */
-  /* margin-left: 10%;
+   margin-left: 10%;
   margin-top: -5%;
 }
 
@@ -260,17 +278,19 @@ text-decoration: underline;
   color: black;
   border: none;
   border-radius: 4px;
+  font-weight: 700;
 }
 
 
 .butt-row .m-info{
   padding: 10px 15px;
-  background-color: #fff;
-  color: black;
+  background-color: grey;
+  color: #fff;
+  font-weight: 700;
   border: none;
   border-radius: 4px;
   margin-left: 10px;
-} */
+} 
 
 
 .slider {
@@ -289,6 +309,7 @@ text-decoration: underline;
 .slider-container {
   display: flex; /* Flexbox for horizontal layout */
   transition: transform 0.5s ease; /* Smooth transition */
+  width: 200%;
 }
 
 .slide {
@@ -301,9 +322,31 @@ text-decoration: underline;
   border-radius: 5px; /* Rounded corners */
 }
 
+.slider-contain {
+  display: flex; /* Flexbox for horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition */
+  width: 200%;
+}
+.slider-containing {
+  display: flex; /* Flexbox for horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition */
+  width: 200%;
+}
+.slider-conting {
+  display: flex; /* Flexbox for horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition */
+  width: 200%;
+}
+.slider-containerer {
+  display: flex; /* Flexbox for horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition */
+  width: 200%;
+}
+
+
 button.prev, button.next {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -337,6 +380,7 @@ footer .foot{
 .foot .icon{
   width: 10%;
   display: flex;
+  height: 22px;
   justify-content: space-between;
   margin-bottom: 30px;
   cursor: pointer;
@@ -392,6 +436,7 @@ footer .foot p{
  }
  .nav-right{
   margin-left: 70%;
+  
  }
  .nav2{
   margin-top: -255%;
@@ -407,9 +452,9 @@ footer .foot p{
  }
  .nav2 button{
   background-color: #000;
-  margin-left: 5%;
+  margin-left: 15%;
   border-radius: 50px;
-  margin-top: 20%;
+  margin-top: 4%;
   border: 2px solid #fff;
   font-size: 20px;
   width: 120px;
@@ -419,16 +464,19 @@ footer .foot p{
   font-size: 15px;
   padding: 3px;
  }
- /* .vid .imgg img{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin-top: -5%;
- } */
-
- .imgg{
-  display: none;
+ .imgg img{
+  position: absolute;
+  width: 130px;
+  height: 90px;
+  margin-top: -135%;
+  margin-left: 17%;
  }
+ 
+
+ /* .imgg{
+  position: absolute;
+  margin-top: 10%;
+ } */
  .vid video{
   width: 250px;
   height: 250px;
@@ -441,11 +489,35 @@ footer .foot p{
   border-radius: 5px; /* Rounded corners */
 }
 .slide {
-  min-width: 100px; /* Width of each slide */
+  min-width: 110px; /* Width of each slide */
   margin-right: 3px; /* Space between slides */
+}
+.slider-container {
+  width: 200%;
+}
+
+.slider-contain {
+  width: 200%;
+}
+.slider-containing {
+  width: 200%;
+}
+.slider-conting {
+  width: 200%;
+}
+.slider-containerer {
+  width: 200%;
 }
  .viddy{
   height: 300px;
+ }
+ .line-text{
+  display: none;
+ }
+ .butt-row{
+  position: absolute;
+  margin-left: 28%;
+  margin-top: -90%;
  }
  footer{
   display: none;
