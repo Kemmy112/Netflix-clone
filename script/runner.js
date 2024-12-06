@@ -206,13 +206,13 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/Netflix-clone/pages/log.html";
+  window.location.href = "/Netflix-clone/pages/log.html";
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/Netflix-clone/pages/contact.html";
+  window.location.href = "/Netflix-clone/pages/contact.html";
 });
 
 
@@ -238,7 +238,7 @@ divDisplay.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault()
-    window.location.href = '/Netflix-clone/Netflix-clone/src/home.html';
+    window.location.href = '/Netflix-clone/src/home.html';
   }
 });
 
@@ -263,6 +263,6 @@ divDisp.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault()
-    window.location.href = '/Netflix-clone/Netflix-clone/src/home.html';
+    window.location.href = '/Netflix-clone/src/home.html';
   }
 });

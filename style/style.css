@@ -484,12 +484,12 @@ body {
   margin-left: 30%;
 }
 
-.sect-4 .inp-class {
+.sect-4 .int-class {
   margin-left: -2%;
   margin-top: 2%;
 }
 
-.sect-4 .inp-class #em-il {
+.sect-4 .int-class #em-il {
   width: 400px;
   height: 50px;
   border-radius: 25px;
@@ -503,7 +503,7 @@ body {
   color: #000;
 }
 
-.sect-4 .inp-class #start {
+.sect-4 .int-class #start {
   padding: 12px 14px;
   width: 160px;
   border: none;
