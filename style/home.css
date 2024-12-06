@@ -524,7 +524,7 @@ nav{
     padding-top: 0;
 }
 nav ul{
-    /* display: none; */
+    display: none;
 }
 nav ul .bse{
     /* display: flex ; */

@@ -24,6 +24,11 @@ form.addEventListener('submit', function(event) {
   if (!email || !password) {
       event.preventDefault(); // Prevent form submission
       errorMessage.textContent = 'Please fill in both email and password fields.';
+
+      setTimeout(() => {
+        errorMessage.textContent = '';
+      }, 1300);
+
   }else{
     event.preventDefault(); // Prevent form submission
     window.location.href = '/Netflix-clone/src/home.html';

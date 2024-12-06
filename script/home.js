@@ -1,4 +1,5 @@
-/ THE VIDEO
+
+// THE VIDEO
 // Select elements
 const video = document.getElementById("myVideo");
 const playButton = document.getElementById("playButton");

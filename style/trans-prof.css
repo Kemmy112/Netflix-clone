@@ -22,7 +22,6 @@ nav{
     padding: 5px;
     border-bottom: 1px solid #efe6e6;
     margin-bottom: 100px;
-    /* outline: 2px solid red; */
 }
 nav .nav-logo{
     width: 80%;
@@ -151,10 +150,6 @@ footer .fut{
     width: 90%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.footer .fut .txt{
-    /* margin-bottom: 30px; */
- 
 }
 footer .fut a{
   text-decoration: none;
