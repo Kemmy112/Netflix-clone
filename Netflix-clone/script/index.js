@@ -236,7 +236,7 @@ function moveSlided(direction) {
 const exitBtn = document.getElementById('exit')
 
 exitBtn.addEventListener('click', ()=>{
-    window.location.href = '../Netflix-clone/src/home.html';
+    window.location.href = 'home.html';
 })
 
 
