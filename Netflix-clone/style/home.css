@@ -32,10 +32,15 @@ nav .nav-logo{
   nav ul{
     width: 65%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   nav ul li {
     display: flex;
+  }
+  nav ul li .per{
+    margin-left: 15px;
+    /* font-weight: 600; */
+    /* color: #9B9B9B; */
   }
   nav ul li a {
     text-decoration: none;
