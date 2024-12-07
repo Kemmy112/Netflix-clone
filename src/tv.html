@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8752be39ad.js" crossorigin="anonymous"></script>
-    <title>Netflix Clone</title>
+    <title>TV shows - Netflix</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJuLWxvZ28tc3ZnIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIyMjUgMCA1NTIgMTAwMCIgYXJpYS1oaWRkZW49InRydWUiIGRhdGEtdWlhPSJuLWxvZ28iPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iOlIxNmpha3Fhc2w6LWEiIHI9Ijc1JSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMzggMCAuNTc4NSAxIC4wMiAwKSI+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3Atb3BhY2l0eT0iLjMiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1vcGFjaXR5PSIuMDUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0yMjUgMHYxMDAwYzYwLTggMTM4LTE0IDE5OC0xN1YwSDIyNSIgZmlsbD0iI2IxMDYwZSIvPjxwYXRoIGQ9Ik01NzkgMHY5ODNjNzEgMyAxMzEgOSAxOTggMTdWMEg1NzkiIGZpbGw9IiNiMTA2MGUiLz48cGF0aCBkPSJNMjI1IDB2MjAwbDE5OCA2MDBWNTU3bDE1MSA0MjZjNzYgMyAxMzYgOSAyMDMgMTdWODAwTDU3OSAyMDB2MjQwTDQyMyAwSDIyNSIgZmlsbD0idXJsKCM6UjE2amFrcWFzbDotYSkiLz48cGF0aCBkPSJNMjI1IDBsMzQ5IDk4M2M3NiAzIDEzNiA5IDIwMyAxN0w0MjMgMEgyMjUiIGZpbGw9IiNlNTA5MTQiLz48L3N2Zz4="
+    />
     <link rel="stylesheet" href="../style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +20,13 @@
 <header id="head">
     <nav class="navv">
       <div class="nav-left">
-        <div>
+
+        <div class="imggg">
           <img src="../public/images/asset 63.png"/> 
         </div>
+        <button class="ex" id="exit" type="button">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
 
         <div class="nav-text">
           <h2><a href="home.html">Home</a></h2>
@@ -87,24 +96,24 @@
               <div class="arrow3">
                 <div class="thirdy">
                   <i class="fa-solid fa-pencil"></i>
-                  <a href="#">Manage Profile</a>
+                  <a href="../pages/manage-prof.html">Manage Profile</a>
                 </div>
               </div>
 
               <div class="arrow4">
                 <div class="fourthy">
                 <i class="fa-solid fa-money-bill-transfer"></i> 
-                <a href="#">Transfer Profile</a>
+                <a href="../pages/trans-prof.html">Transfer Profile</a>
                 </div>
               </div>
 
               <div class="arrow5">
                 <div class="fifthy">
                   <i class="fa-regular fa-circle-question"></i>
-                  <a href="#">Help Center</a>
+                  <a href="">Help Center</a>
                 </div>
               </div>
-              <button>Sign Out Of Netflix</button>
+              <button> <a href="../src/index.html">Sign Out Of Netflix</a></button>
             </div>
           </div>
         </div>
@@ -128,7 +137,6 @@
   <button type="button" class="pl-y">Play</button>
   <button type="button" class="m-info">More info</button>
  </div>
-
 
  <div class="nav2">
   <h2>TV Shows</h2>
@@ -166,6 +174,8 @@
   </div>
   </div>
   </div>
+
+
 </section>
 
 <div class="slider">
@@ -319,4 +329,3 @@
     <script src="../script/index.js"></script>
 </body>
 </html>
-

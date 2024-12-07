@@ -526,6 +526,9 @@ nav{
 nav ul{
     display: none;
 }
+nav ul .bse{
+    /* display: flex ; */
+}
 nav .profile{
     display: none;
 }

@@ -1,3 +1,4 @@
+
 const learnMore = document.getElementById('show-up');
 const hiddenDiv = document.getElementById('revv');
 
