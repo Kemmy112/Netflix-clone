@@ -18,6 +18,11 @@
     width: 100%;
     position: absolute;
   }
+
+  #navv video{
+    width: 100%;
+  }
+
   
   /* Style the navigation links*/
   nav ul {

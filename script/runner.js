@@ -1,57 +1,89 @@
 //Slider code
 
-let currentIndex = 0;
 
-function moveSlide(direction) {
-  const slides = document.querySelectorAll(".slider-item"); // variables defined
-  const totalSlides = slides.length;
+let currentIndex = 0; // Start at the first set of slides
+const slides = document.querySelectorAll('.slider-item'); // Select all slides
+const slidesPerPage = 6; // Number of slides to show at once
+const totalSlides = slides.length;
 
-  // Update current index based on direction
-  currentIndex += direction;
-
-  // Wrap around if out of bounds
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  // Calculate the offset for the slider content
-  const offset = -currentIndex * (slides[0].clientWidth + 20); // 20 is the margin
-  document.querySelector(
-    ".slider-content"
-  ).style.transform = `translateX(${offset}px)`;
+function updateSlides() {
+    slides.forEach((slide, index) => {
+        if (index >= currentIndex && index < currentIndex + slidesPerPage) {
+            slide.style.display = 'block'; // Show this slide
+            slide.style.opacity = '1'; // Make it fully visible
+        } else {
+            slide.style.display = 'none'; // Hide this slide
+            slide.style.opacity = '0'; // Make it invisible
+        }
+    });
 }
 
-// For the second slider
+document.getElementById('nextbutton').addEventListener('click', () => {
+    currentIndex += slidesPerPage; // Move to the next set of slides
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0; // Reset to the first set if at the end
+    }
+    updateSlides(); // Update the display of slides
+});
 
-let presenttIndex = 0;
+document.getElementById('previousbutton').addEventListener('click', () => {
+    currentIndex -= slidesPerPage; // Move to the previous set of slides
+    if (currentIndex < 0) {
+        currentIndex = Math.max(0, totalSlides - slidesPerPage); // Prevent going negative
+    }
+    updateSlides(); // Update the display of slides
+});
 
-function shiftSlide(direction) {
-  const sliding = document.querySelectorAll(".slide-pic");
-  const totalSlide = sliding.length;
+// Initial call to display the first set of slides
+updateSlides();
 
-  // Update current index based on direction
-  presenttIndex += direction;
 
-  // Wrap around if out of bounds
+//For the second slider
+
+let presenttIndex = 0; // Start at the first set of slides
+const sliding= document.querySelectorAll('.slide-pic'); // Select all slides
+const slidePerPage = 6; // Number of slides to show at once
+const totalSlide = slides.length;
+
+
+function shiftSlides () {
+  sliding.forEach((slide, index) => {
+    if (index >= presenttIndex && index < presenttIndex + slidePerPage) {
+      slide.style.display = 'block'; // Show this slide
+      slide.style.opacity = '1'; // Make it fully visible
+  } else {
+      slide.style.display = 'none'; // Hide this slide
+      slide.style.opacity = '0'; // Make it invisible
+  }
+  });
+}
+
+document.getElementById('next').addEventListener('click', () => {
+ presenttIndex += slidePerPage; // Move to the next set of slides
+  if (presenttIndex >= totalSlide) {
+    presenttIndex = 0; // Reset to the first set if at the end
+  }
+  shiftSlides(); // Update the display of slides
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+  presenttIndex -= slidePerPage; // Move to the previous set of slides
   if (presenttIndex < 0) {
-    presenttIndex = totalSlide - 1;
-  } else if (presenttIndex >= totalSlide) {
-    presenttIndex = 0;
+    presenttIndex = Math.max(0, totalSlide - slidePerPage); // Prevent going negative
   }
+  shiftSlides(); // Update the display of slides
+});
 
-  // Calculate the offset for the slider content
-  const offset = -presenttIndex * (sliding[0].clientWidth + 20); // 20 is the margin
-  document.querySelector(
-    ".slide-cont"
-  ).style.transform = `translateX(${offset}px)`;
-}
+//Call the function
+
+shiftSlides();
+
+
 
 //FOR THE FAQ SECTION
 
-// const plusHits = document.querySelectorAll(".p-plus");
-// const composeDrop = document.querySelector(".defi-drop");
+
+
 
 mmm = document.getElementById("he");
 trimImage = document.getElementById('hie')
@@ -177,20 +209,23 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/pages/log.html";
+  window.location.href = "/pages/log.html";
+
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
-  window.location.href = "/Netflix-clone/pages/contact.html";
+  window.location.href = "/pages/contact.html";
+
 });
 
 
 
 const getStarted = document.getElementById('strt');
 const errorMessage = document.getElementById('error-msg');
-const divDisplay = document.getElementById('innput'); // Ensure this is a form element.
+const divDisplay = document.getElementById('innpt'); // Ensure this is a form element.
+
 
 divDisplay.addEventListener('submit', function(event) {
   errorMessage.textContent = '';
@@ -208,14 +243,16 @@ divDisplay.addEventListener('submit', function(event) {
 
   } else {
     // Remove event.preventDefault() here to allow the redirect
-    event.preventDefault()
-    window.location.href = '/Netflix-clone/src/home.html';
+    event.preventDefault();
+    window.location.href = '/src/home.html';
+
   }
 });
 
 const getStart = document.getElementById('start');
 const errMessage = document.getElementById('erro-msg');
-const divDisp = document.getElementById('input-class'); // Ensure this is a form element.
+const divDisp = document.getElementById('innput'); // Ensure this is a form element.
+
 
 divDisp.addEventListener('submit', function(event) {
   errMessage.textContent = '';
@@ -233,7 +270,8 @@ divDisp.addEventListener('submit', function(event) {
 
   } else {
     // Remove event.preventDefault() here to allow the redirect
-    event.preventDefault()
-    window.location.href = '/Netflix-clone/src/home.html';
+    event.preventDefault();
+    window.location.href = '/src/home.html';
+
   }
 });
