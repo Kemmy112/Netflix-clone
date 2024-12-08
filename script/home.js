@@ -1,3 +1,4 @@
+
 // THE VIDEO
 // Select elements
 const video = document.getElementById("myVideo");
