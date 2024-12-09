@@ -1,5 +1,5 @@
 //Slider code
-
+document.addEventListener('DOMContentLoaded', function() {
 let currentIndex = 0;
 
 function moveSlide(direction) {
@@ -176,7 +176,9 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "./Netflix-clone\pages\log.html";
+  // console.log('Sign In button clicked', window.location);
+  window.location.href = "/Netflix-clone/pages/log.html";
+ 
 });
 
 const contactQuestions = document.getElementById("quest");
@@ -259,4 +261,5 @@ divDisp.addEventListener('submit', function(event) {
     event.preventDefault()
     window.location.href = '/Netflix-clone/src/home.html';
   }
+});
 });
