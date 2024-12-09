@@ -1,5 +1,10 @@
 //Slider code
+<<<<<<< HEAD:Netflix-clone/script/runner.js
+document.addEventListener('DOMContentLoaded', function() {
+let currentIndex = 0;
+=======
 
+>>>>>>> 53bf13640c69754e611b23568264f21dbd2bbb80:script/runner.js
 
 let currentIndex = 0; // Start at the first set of slides
 const slides = document.querySelectorAll('.slider-item'); // Select all slides
@@ -209,8 +214,14 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
+<<<<<<< HEAD:Netflix-clone/script/runner.js
+  // console.log('Sign In button clicked', window.location);
+  window.location.href = "/Netflix-clone/pages/log.html";
+ 
+=======
   window.location.href = "/pages/log.html";
 
+>>>>>>> 53bf13640c69754e611b23568264f21dbd2bbb80:script/runner.js
 });
 
 const contactQuestions = document.getElementById("quest");
@@ -274,4 +285,5 @@ divDisp.addEventListener('submit', function(event) {
     window.location.href = '/src/home.html';
 
   }
+});
 });
