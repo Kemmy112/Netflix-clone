@@ -84,6 +84,7 @@ shiftSlides();
 
 
 
+
 mmm = document.getElementById("he");
 trimImage = document.getElementById('hie')
 mmm.onclick = function () {
@@ -209,12 +210,14 @@ const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
   window.location.href = "/pages/log.html";
+
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
   window.location.href = "/pages/contact.html";
+
 });
 
 
@@ -222,6 +225,7 @@ contactQuestions.addEventListener("click", () => {
 const getStarted = document.getElementById('strt');
 const errorMessage = document.getElementById('error-msg');
 const divDisplay = document.getElementById('innpt'); // Ensure this is a form element.
+
 
 divDisplay.addEventListener('submit', function(event) {
   errorMessage.textContent = '';
@@ -239,14 +243,16 @@ divDisplay.addEventListener('submit', function(event) {
 
   } else {
     // Remove event.preventDefault() here to allow the redirect
-    event.preventDefault()
+    event.preventDefault();
     window.location.href = '/src/home.html';
+
   }
 });
 
 const getStart = document.getElementById('start');
 const errMessage = document.getElementById('erro-msg');
 const divDisp = document.getElementById('innput'); // Ensure this is a form element.
+
 
 divDisp.addEventListener('submit', function(event) {
   errMessage.textContent = '';
@@ -264,7 +270,8 @@ divDisp.addEventListener('submit', function(event) {
 
   } else {
     // Remove event.preventDefault() here to allow the redirect
-    event.preventDefault()
+    event.preventDefault();
     window.location.href = '/src/home.html';
+
   }
 });
