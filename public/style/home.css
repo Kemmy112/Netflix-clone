@@ -39,15 +39,12 @@ nav .nav-logo{
   nav ul{
     width: 65%;
     display: flex;
-    /* justify-content: space-between; */
   }
   nav ul li {
     display: flex;
   }
   nav ul li .per{
-    margin-left: 15px;
-    /* font-weight: 600; */
-    /* color: #9B9B9B; */
+   padding-left: 15px;
   }
   nav ul li a {
     text-decoration: none;
@@ -528,23 +525,30 @@ footer .foot p{
 
 /* navigation bar */
 nav{
-    width: 85%;
-    padding-top: 0;
+    width: 95%;
+    padding-top: 5px;
 }
 nav .nav-logo img{
     width: 80px;
   }
-nav .mb-view{
-    /* display: none; */
+  nav ul.mb-view{
+    /* display: block; */
+    
   }
-nav ul{
+  nav ul {
+    width: 80%;
+  }
+nav ul .hm{
     display: none;
 }
-nav ul .bse{
-    /* display: flex ; */
+nav ul .per{
+    margin-left: 90px;
 }
 nav .profile{
-    /* display: none; */
+    width: 20%;
+}
+nav .profile .pr{
+    margin-left: 10px;
 }
 nav .profile .fa-magnifying-glass{
     display: none;
