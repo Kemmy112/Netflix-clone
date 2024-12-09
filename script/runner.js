@@ -1,10 +1,6 @@
 //Slider code
-<<<<<<< HEAD:Netflix-clone/script/runner.js
 document.addEventListener('DOMContentLoaded', function() {
-let currentIndex = 0;
-=======
 
->>>>>>> 53bf13640c69754e611b23568264f21dbd2bbb80:script/runner.js
 
 let currentIndex = 0; // Start at the first set of slides
 const slides = document.querySelectorAll('.slider-item'); // Select all slides
@@ -214,20 +210,15 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-<<<<<<< HEAD:Netflix-clone/script/runner.js
-  // console.log('Sign In button clicked', window.location);
-  window.location.href = "/Netflix-clone/pages/log.html";
- 
-=======
-  window.location.href = "/pages/log.html";
 
->>>>>>> 53bf13640c69754e611b23568264f21dbd2bbb80:script/runner.js
+  window.location.href = "../pages/log.html";
+
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
-  window.location.href = "/pages/contact.html";
+  window.location.href = "../pages/contact.html";
 
 });
 
@@ -255,7 +246,7 @@ divDisplay.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault();
-    window.location.href = '/src/home.html';
+    window.location.href = '../src/home.html';
 
   }
 });
@@ -282,7 +273,7 @@ divDisp.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault();
-    window.location.href = '/src/home.html';
+    window.location.href = '../src/home.html';
 
   }
 });

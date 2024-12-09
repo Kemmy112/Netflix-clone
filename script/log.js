@@ -33,7 +33,7 @@ form.addEventListener('submit', function(event) {
   }else{
     event.preventDefault(); // Prevent form submission
 
-    window.location.href = '/src/home.html';
+    window.location.href = '../src/home.html';
 
   }
 });
