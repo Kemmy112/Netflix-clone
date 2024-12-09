@@ -29,6 +29,13 @@
 nav .nav-logo{
     width: 10%;
   }
+  nav .mb-view{
+    display: none;
+    /* display: flex; */
+  }
+  nav .mb-view i{
+    margin-left: 10px;
+  }
   nav ul{
     width: 65%;
     display: flex;
@@ -521,8 +528,15 @@ footer .foot p{
 
 /* navigation bar */
 nav{
+    width: 85%;
     padding-top: 0;
 }
+nav .nav-logo img{
+    width: 80px;
+  }
+nav .mb-view{
+    /* display: none; */
+  }
 nav ul{
     display: none;
 }
@@ -530,6 +544,12 @@ nav ul .bse{
     /* display: flex ; */
 }
 nav .profile{
+    /* display: none; */
+}
+nav .profile .fa-magnifying-glass{
+    display: none;
+}
+nav .profile .ls{
     display: none;
 }
 .page-one .txt{
