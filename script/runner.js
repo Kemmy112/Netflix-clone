@@ -1,4 +1,5 @@
 //Slider code
+document.addEventListener('DOMContentLoaded', function() {
 
 
 let currentIndex = 0; // Start at the first set of slides
@@ -209,14 +210,15 @@ mim.onclick = function () {
 const signIn = document.getElementById("sign-btn");
 
 signIn.addEventListener("click", () => {
-  window.location.href = "/pages/log.html";
+
+  window.location.href = "../pages/log.html";
 
 });
 
 const contactQuestions = document.getElementById("quest");
 
 contactQuestions.addEventListener("click", () => {
-  window.location.href = "/pages/contact.html";
+  window.location.href = "../pages/contact.html";
 
 });
 
@@ -244,7 +246,7 @@ divDisplay.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault();
-    window.location.href = '/src/home.html';
+    window.location.href = '../src/home.html';
 
   }
 });
@@ -271,7 +273,8 @@ divDisp.addEventListener('submit', function(event) {
   } else {
     // Remove event.preventDefault() here to allow the redirect
     event.preventDefault();
-    window.location.href = '/src/home.html';
+    window.location.href = '../src/home.html';
 
   }
+});
 });

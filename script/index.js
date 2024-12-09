@@ -236,5 +236,5 @@ sliderContyey.forEach(container => {
 const exitBtn = document.getElementById('exit')
 
 exitBtn.addEventListener('click', ()=>{
-window.location.href = 'home.html';
+window.location.href = './home.html';
 })
