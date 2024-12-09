@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,11 +9,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJuLWxvZ28tc3ZnIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIyMjUgMCA1NTIgMTAwMCIgYXJpYS1oaWRkZW49InRydWUiIGRhdGEtdWlhPSJuLWxvZ28iPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iOlIxNmpha3Fhc2w6LWEiIHI9Ijc1JSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMzggMCAuNTc4NSAxIC4wMiAwKSI+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3Atb3BhY2l0eT0iLjMiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1vcGFjaXR5PSIuMDUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0yMjUgMHYxMDAwYzYwLTggMTM4LTE0IDE5OC0xN1YwSDIyNSIgZmlsbD0iI2IxMDYwZSIvPjxwYXRoIGQ9Ik01NzkgMHY5ODNjNzEgMyAxMzEgOSAxOTggMTdWMEg1NzkiIGZpbGw9IiNiMTA2MGUiLz48cGF0aCBkPSJNMjI1IDB2MjAwbDE5OCA2MDBWNTU3bDE1MSA0MjZjNzYgMyAxMzYgOSAyMDMgMTdWODAwTDU3OSAyMDB2MjQwTDQyMyAwSDIyNSIgZmlsbD0idXJsKCM6UjE2amFrcWFzbDotYSkiLz48cGF0aCBkPSJNMjI1IDBsMzQ5IDk4M2M3NiAzIDEzNiA5IDIwMyAxN0w0MjMgMEgyMjUiIGZpbGw9IiNlNTA5MTQiLz48L3N2Zz4="
     />
-
-
-    <link rel="stylesheet" href="/public/style/style.css" />
-
-
+    <link rel="stylesheet" href="/Netflix-clone/style/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -50,11 +45,10 @@
               membership</b
             >
           </p>
-          <form class="inp-class" id="innpt">
+          <div class="inp-class">
             <input type="text" placeholder="Email address" id="email" />
-            <button type="submit" class="start" id="strt">Get Started ></button>
-          </form>
-          <div class="err" id="error-msg" style="color: red"></div>
+            <button type="button" class="strt" id="start">Get Started ></button>
+          </div>
         </div>
       </div>
     </header>
@@ -104,6 +98,7 @@
         <button
           class="slider-control left"
           id="previousbutton"
+          onclick="moveSlide(-1)"
         >
           &#10094;
         </button>
@@ -184,6 +179,7 @@
         <button
           class="slider-control right"
           id="nextbutton"
+          onclick="moveSlide(1)"
         >
           &#10095;
         </button>
@@ -192,7 +188,7 @@
       <h3 class="slide-mid">Only on Netflix</h3>
 
       <div class="slider2">
-        <button class="slider-control left" id="prev">
+        <button class="slider-control left" id="prev" onclick="shiftSlide(-1)">
           &#10094;
         </button>
         <div class="slide-cont">
@@ -270,7 +266,7 @@
           </div>
         </div>
 
-        <button class="slider-control right" id="next">
+        <button class="slider-control right" id="next" onclick="shiftSlide(1)">
           &#10095;
         </button>
       </div>
@@ -468,11 +464,10 @@
       <p class="ttxt">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <form class="int-class" id="innput">
-        <input type="text" placeholder="Email address" id="em-il" />
-        <button type="submit" class="strt" id="start">Get Started ></button>
-      </form>
-      <div class="err" id="erro-msg" style="color: red"></div>
+      <div class="inp-class">
+        <input type="text" placeholder="Email address" id="email" />
+        <button type="button" class="strt" id="start">Get Started ></button>
+      </div>
     </section>
 
     <footer class="page-footer">
@@ -533,7 +528,6 @@
       </div>
       <p class="end-tag">Netflix Nigeria</p>
     </footer>
-    <script src="/script/runner.js"></script>
-
+    <script src="/Netflix-clone/script/runner.js"></script>
   </body>
 </html>
